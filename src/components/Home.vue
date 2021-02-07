@@ -13,6 +13,8 @@
           name="name"
           v-model="visiterName"
           placeholder='Type your name and press "ENTER".'
+          v-on:keyup.enter="goTo('about-me')"
+          autofocus
         />
       </div>
     </section>
@@ -20,7 +22,7 @@
       <div class="center-box-container">
         <h1>Who I am?</h1>
         <p>
-          {{ visiterName ? `Hi ${visiterName}.`: null}} It is nice to meet you. let me introduce myself, my name is
+          {{ visiterName ? `Hi ${capitalizeName(visiterName)}.`: null}} It is nice to meet you. let me introduce myself, my name is
           Jose Alvis I am a fullstack web developer. I have flew years working
           in this carrer, more than five if I have to tell. Since that I have
           been Developing web applications for diferent companies, working with
@@ -47,7 +49,16 @@ export default {
     return {
       visiterName: null
     }
-  }
+  },
+   methods: {
+      capitalizeName(fullName) {
+        let names =  fullName.match(/\w+/g)
+        return names.map(name=>name[0].toUpperCase() + name.slice(1).toLowerCase()).join(" ");
+      },
+      goTo(section){
+          window.location = '#'+section;
+      }
+    }
 };
 </script>
 
