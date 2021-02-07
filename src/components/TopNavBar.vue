@@ -1,7 +1,7 @@
 <template>
   <nav id="top-nav-bar">
-      <a href="#" >Who I am</a>
-      <a href="#" >How I code</a>
+      <a href="#intro" >Who I am</a>
+      <a href="#about-me" >How I code</a>
       <a href="#" >Contact</a>
   </nav>
 </template>
@@ -15,6 +15,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     #top-nav-bar{
+       z-index: 9000;
        color: #EBF5F0;
        display: flex;
        background-color: #ce2751;

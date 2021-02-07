@@ -19,8 +19,19 @@ export default {
 </script>
 
 <style>
+html{
+   scroll-behavior: smooth;
+}
+
 body{
   margin: 0px;
+}
+h1, h2, h3{
+  font-family:'Century Gothic','Times New Roman', Times, serif;
+}
+
+h1{
+  font-size: 2.5em;
 }
 #app {
   font-family: Consolas, Avenir, Helvetica, Arial, sans-serif;
