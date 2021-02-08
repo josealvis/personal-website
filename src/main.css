@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Century Gothic", "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+#app {
+  font-family: Consolas, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background-color: #FEFCFB;
+}
+
+.hidden-accesibility {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
