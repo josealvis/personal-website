@@ -2,12 +2,14 @@
   <main>
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
+    <ContactSection :visiterName="visiterName"/>
   </main>
 </template>
 
 <script>
-import IntroSection from "./IntroSection";
+import IntroSection from "./IntroSection"
 import AboutMeSection from "./AboutMeSection"
+import ContactSection from "./ContactSection"
 
 export default {
   name: "Home",
@@ -23,7 +25,8 @@ export default {
   },
   components: {
     IntroSection,
-    AboutMeSection
+    AboutMeSection,
+    ContactSection
   },
 };
 </script>

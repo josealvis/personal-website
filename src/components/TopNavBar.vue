@@ -2,7 +2,7 @@
   <nav id="top-nav-bar">
       <a href="#intro" >Who I am</a>
       <a href="#about-me" >How I code</a>
-      <a href="#" >Contact</a>
+      <a href="#contact" >Contact</a>
   </nav>
 </template>
 
