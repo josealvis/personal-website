@@ -23,7 +23,6 @@
 
 <script>
 import { personalInfo } from "../const/config";
-personalInfo.email = "pep la anguil"
 
 export default {
   name: "ContactSection",
