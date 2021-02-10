@@ -2,6 +2,7 @@
   <main>
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
+    <RecentlyReadingSection/>
     <ContactSection :visiterName="visiterName"/>
   </main>
 </template>
@@ -10,6 +11,7 @@
 import IntroSection from "./IntroSection"
 import AboutMeSection from "./AboutMeSection"
 import ContactSection from "./ContactSection"
+import RecentlyReadingSection from "./RecentlyReadingSection"
 
 export default {
   name: "Home",
@@ -26,7 +28,8 @@ export default {
   components: {
     IntroSection,
     AboutMeSection,
-    ContactSection
+    ContactSection,
+    RecentlyReadingSection
   },
 };
 </script>

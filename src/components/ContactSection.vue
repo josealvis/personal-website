@@ -49,11 +49,9 @@ export default {
   background-color: #161616;
   color: #fefcfb;
 }
-
 .centered {
   align-self: center;
 }
-
 #contact-subtitle {
   color: #308ec5;
   position: relative;
