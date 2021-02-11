@@ -1,6 +1,6 @@
 <template>
   <main>
-    <KCode/>
+    <KCode v-if="false"/>
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
     <PortfolioSection :visiterName="visiterName"/>
@@ -47,9 +47,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 main {
-  /* padding-top: 60px; */
   display: flex;
   flex-direction: column;
+  min-width: 100vw;
 }
 
 section {
@@ -58,6 +58,15 @@ section {
   height: 100vh;
   min-height: 500px;
   align-items: center;
+
+}
+@media (max-width: 500px) {
+  section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
 }
 
 section h1 {
@@ -67,9 +76,11 @@ section h1 {
 .center-box-container {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  max-width: 750px;
+  margin: 20px;
   margin-top: 100px;
 }
+
 .hightlight {
   color: #ecac00;
 }

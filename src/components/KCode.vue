@@ -15,11 +15,11 @@ export default {
   },
   methods: {
     keyCode(event) {
+      console.log(event.key)
       let vm = this;
       if (event.keyCode == 38 && this.secretCode == "") {
         this.secretCode += event.keyCode;
         setTimeout(() => {
-          console.log("timer secret: ", vm.secretCode);
           vm.secretCode = "";
         }, 5000);
       }
@@ -27,7 +27,6 @@ export default {
       if (this.secretCode != "") {
         this.secretCode += event.keyCode;
         if (this.secretCode == "3838384040373937396665") {
-          console.log("success");
           this.validCode[this.random(0,this.validCode.length)] = true;
           setTimeout(() => (vm.validCode = [false, false]), 10000);
         }
@@ -35,7 +34,6 @@ export default {
     },
     random(min = 0, max = 50) {
       let num = Math.random() * (max - min) + min;
-
       return Math.floor(num);
     },
   },

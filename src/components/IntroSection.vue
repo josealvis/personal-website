@@ -6,6 +6,7 @@
       <label class="hidden-accesibility" for="input-name"
         >Type your name and press "ENTER"</label
       >
+      <form name="form-vister-name" >
       <input
         id="input-name"
         type="text"
@@ -14,7 +15,9 @@
         placeholder='Type your name and press "ENTER".'
         v-on:keyup.enter="goTo('about-me')"
         autofocus
-      />
+      /> 
+      
+      </form>
     </div>
   </section>
 </template>
@@ -35,8 +38,8 @@ export default {
       window.location = "#" + section;
     },
     capitalizeName(fullName) {
-      if(!fullName) return fullName
-      let names = fullName.match(/\w+/g)
+      if (!fullName) return fullName;
+      let names = fullName.match(/\w+/g);
       return names
         .map((name) => name[0].toUpperCase() + name.slice(1).toLowerCase())
         .join(" ");
@@ -78,5 +81,35 @@ export default {
   min-height: 25px;
   min-width: 400px;
   font-size: 1.2em;
+}
+/*for mobile dispositives */
+@media (max-width: 500px) {
+  #title {
+    margin-top: 30%;
+    font-family: "Century Gothic", "Times New Roman", Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0px;
+  }
+
+  #input-name {
+    position: relative;
+    top: -40px;
+    border: none;
+    align-self: flex-start;
+    padding: 20px;
+    min-height: 25px;
+    min-width: 80%;
+    font-size: 1em;
+  }
+
+  #subtitle {
+  align-self: flex-end;
+  position: relative;
+  top: -40px;
+  font-size: 1.5em;
+  margin-right: 20px;
+  font-weight: bold;
+}
 }
 </style>
