@@ -1,10 +1,14 @@
 <template>
   <main>
+    <KCode/>
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
     <PortfolioSection :visiterName="visiterName"/>
     <RecentlyReadingSection/>
     <ContactSection :visiterName="visiterName"/>
+    <footer>
+        <p>© 2021 Jose Alvis Pena.  Made with with <a class="footer-link" href="https://vuejs.org/" >Vue.js</a> + CSS</p>
+    </footer>
   </main>
 </template>
 
@@ -14,12 +18,13 @@ import AboutMeSection from "./AboutMeSection"
 import ContactSection from "./ContactSection"
 import RecentlyReadingSection from "./RecentlyReadingSection"
 import PortfolioSection from "./PortfolioSection"
+import KCode from "./KCode"
 
 export default {
   name: "Home",
   data() {
     return {
-      visiterName: null,
+      visiterName: null
     };
   },
   methods: {
@@ -32,8 +37,10 @@ export default {
     AboutMeSection,
     ContactSection,
     RecentlyReadingSection,
-    PortfolioSection
-  },
+    PortfolioSection,
+    KCode
+  }
+
 };
 </script>
 
@@ -66,5 +73,19 @@ section h1 {
 .hightlight {
   color: #ecac00;
 }
-
+footer{
+    background-color: #1e1b18;
+    color: #fefcfb;
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+  text-decoration: none;
+  color:#fefcfb;
+  font-weight: bold;
+}
+.footer-link:hover{
+  text-decoration: none;
+  color:#3e92cc;
+}
 </style>

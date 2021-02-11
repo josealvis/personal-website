@@ -14,7 +14,7 @@
       >
         <img class="responsive-img" src="../assets/pwsc.png" />
         <div class="project-footer">
-          <span class="project-box-label">This page code</span>
+          <span class="project-box-label">&lt; This page code /></span>
         </div>
       </a>
       <a
@@ -25,7 +25,7 @@
       >
         <img class="responsive-img" src="../assets/progammingChallenges.png" />
         <div class="project-footer">
-          <span class="project-box-label">Progamming Problems</span>
+          <span class="project-box-label">&lt; Progamming Problems /></span>
         </div>
       </a>
     </div>
