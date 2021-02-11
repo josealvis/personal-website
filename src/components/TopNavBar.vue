@@ -1,7 +1,7 @@
 <template>
   <nav id="top-nav-bar">
       <a href="#about-me" >Who I am</a>
-      <a href="#about-me" >How I code</a>
+      <a href="#portfolio" >How I code</a>
       <a href="#contact" >Contact</a>
   </nav>
 </template>

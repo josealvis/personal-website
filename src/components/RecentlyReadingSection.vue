@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style>
+#readings{
+  background-color: #f0e5c2;
+}
 #container-books-display {
   display: flex;
   justify-content: center;

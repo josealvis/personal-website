@@ -2,6 +2,7 @@
   <main>
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
+    <PortfolioSection :visiterName="visiterName"/>
     <RecentlyReadingSection/>
     <ContactSection :visiterName="visiterName"/>
   </main>
@@ -12,6 +13,7 @@ import IntroSection from "./IntroSection"
 import AboutMeSection from "./AboutMeSection"
 import ContactSection from "./ContactSection"
 import RecentlyReadingSection from "./RecentlyReadingSection"
+import PortfolioSection from "./PortfolioSection"
 
 export default {
   name: "Home",
@@ -29,7 +31,8 @@ export default {
     IntroSection,
     AboutMeSection,
     ContactSection,
-    RecentlyReadingSection
+    RecentlyReadingSection,
+    PortfolioSection
   },
 };
 </script>

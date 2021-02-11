@@ -46,7 +46,7 @@ export default {
 }
 
 #contact {
-  background-color: #161616;
+  background-color: #1e1b18;
   color: #fefcfb;
 }
 .centered {
