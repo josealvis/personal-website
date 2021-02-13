@@ -6,7 +6,7 @@
       <label class="hidden-accesibility" for="input-name"
         >Type your name and press "ENTER"</label
       >
-      <form name="form-vister-name" >
+      <form name="form-vister-name" v-on:submit.prevent >
       <input
         id="input-name"
         type="text"

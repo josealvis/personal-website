@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import  IntroSection from './IntroSection.vue'
+import IntroSection from './IntroSection.vue'
 
 test('renders  IntroSection', () => {
   const wrapper = mount(IntroSection)

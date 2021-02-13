@@ -7,7 +7,7 @@
     <RecentlyReadingSection/>
     <ContactSection :visiterName="visiterName"/>
     <footer>
-        <p>© 2021 Jose Alvis Pena.  Made with with <a class="footer-link" href="https://vuejs.org/" >Vue.js</a> + CSS</p>
+        <p>© 2021 Jose Alvis Pena.  Made with <a class="footer-link" href="https://vuejs.org/" >Vue.js</a> + CSS</p>
     </footer>
   </main>
 </template>
@@ -67,6 +67,8 @@ section {
   height: 100vh;
   align-items: center;
 }
+
+
 }
 
 section h1 {
@@ -89,6 +91,7 @@ footer{
     color: #fefcfb;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 .footer-link{
   text-decoration: none;

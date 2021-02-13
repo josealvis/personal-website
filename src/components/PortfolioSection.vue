@@ -16,7 +16,7 @@
         alt="repo programming challenges"
         src="../assets/pwsc.png" />
         <div class="project-footer">
-          <span class="project-box-label">&lt; This page code /></span>
+          <span class="project-box-label">&lt; This Page Code /></span>
         </div>
       </a>
       <a
