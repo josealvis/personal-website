@@ -1,6 +1,6 @@
 <template>
   <div id="mobile-toggle">
-    <button class="toggle-btn" v-on:click="toggleHandler">
+    <button id="toggle-btn" aria-label="oggle Button for main menu" class="toggle-btn" v-on:click="toggleHandler">
       <font-awesome-icon :icon="['fas', 'bars']" />
     </button>
   </div>

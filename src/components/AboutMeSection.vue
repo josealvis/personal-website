@@ -2,7 +2,7 @@
   <section id="about-me">
     <div class="center-box-container">
       <h1>Who I am?</h1>
-      <p>
+      <p data-test="about-text">
         {{ visiterName ? `Hi ${visiterName}.` : null }} It is nice to meet you.
         let me introduce myself, my name is Jose Alvis I am a fullstack web
         developer. I have flew years working in this carrer, more than five if I

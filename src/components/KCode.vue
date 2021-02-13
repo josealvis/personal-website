@@ -1,7 +1,7 @@
 <template>
   <img id="mr" v-if="validCode[0]" src="../assets/mr.gif" />
   <img id="pk" v-if="validCode[0]" src="../assets/pk.gif" />
-  <img id="nv" v-if="validCode[1]" src="../assets/nv.gif" />
+  <img id="nv" v-if="flase" src="../assets/nv.gif" />
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
       if (this.secretCode != "") {
         this.secretCode += event.keyCode;
         if (this.secretCode == "3838384040373937396665") {
-          this.validCode[this.random(0,this.validCode.length)] = true;
+          this.validCode[this.random(0,0)] = true;
           setTimeout(() => (vm.validCode = [false, false]), 10000);
         }
       }

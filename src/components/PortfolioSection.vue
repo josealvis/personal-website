@@ -12,7 +12,9 @@
         class="project-box"
         target="_blanck"
       >
-        <img class="responsive-img" src="../assets/pwsc.png" />
+        <img class="responsive-img" 
+        alt="repo programming challenges"
+        src="../assets/pwsc.png" />
         <div class="project-footer">
           <span class="project-box-label">&lt; This page code /></span>
         </div>
@@ -23,7 +25,9 @@
         class="project-box"
         target="_blanck"
       >
-        <img class="responsive-img" src="../assets/progammingChallenges.png" />
+        <img class="responsive-img" 
+         alt="repo programming challenges"
+        src="../assets/progammingChallenges.png" />
         <div class="project-footer">
           <span class="project-box-label">&lt; Progamming Problems /></span>
         </div>

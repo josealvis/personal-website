@@ -1,7 +1,7 @@
 <template>
-  <section id="intro">
+  <section id="intro" data-test="intro">
     <div class="center-box-container">
-      <h1 id="title">Jose Alvis Pena</h1>
+      <h1 id="title" >Jose Alvis Pena</h1>
       <span id="subtitle">Fullstack web developer</span>
       <label class="hidden-accesibility" for="input-name"
         >Type your name and press "ENTER"</label

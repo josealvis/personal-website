@@ -4,7 +4,7 @@ import  IntroSection from './IntroSection.vue'
 test('renders  IntroSection', () => {
   const wrapper = mount(IntroSection)
 
-  const todo = wrapper.get('[id="title"]')
+  const title = wrapper.get('[id="title"]')
 
-  expect(todo.text()).toBe('Jose Alvis Pena')
+  expect(title.text()).toBe('Jose Alvis Pena')
 })

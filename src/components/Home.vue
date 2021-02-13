@@ -1,6 +1,6 @@
 <template>
   <main>
-    <KCode v-if="false"/>
+    <KCode />
     <IntroSection :changeNameHandler="changeNameHandler"/>
     <AboutMeSection :visiterName="visiterName"/>
     <PortfolioSection :visiterName="visiterName"/>
