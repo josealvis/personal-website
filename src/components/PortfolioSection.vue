@@ -1,6 +1,6 @@
 <template>
   <section id="portfolio">
-    <h1 class="centered">
+    <h1 class="centered" data-test="test-title">
       {{ visiterName ? `${visiterName}, ` : null }}Here are some project and
       programming problem I have done
     </h1>

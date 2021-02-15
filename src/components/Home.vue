@@ -56,7 +56,7 @@ section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-height: 500px;
+ /* min-height: 500px; */
   align-items: center;
 
 }

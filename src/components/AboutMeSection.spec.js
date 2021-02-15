@@ -1,7 +1,12 @@
 import { mount } from '@vue/test-utils'
 import AboutMeSection from './AboutMeSection.vue'
 
-test('renders a visiter name in the text about me', async () => {
+it('renders correctly', () => {
+    const wrapper = mount(AboutMeSection)
+    expect(wrapper.element).toMatchSnapshot();
+  });
+
+it('renders a visiter name in the text about me', async () => {
     const wrapper = mount(AboutMeSection)
     const visiterName = "Robot Test"
 

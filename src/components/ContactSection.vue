@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
     <div class="center-box-container">
-      <h1 class="centered">
+      <h1 class="centered" data-test="contact-title">
         {{ visiterName ? `${visiterName}, ` : null }}Let’s work together...
       </h1>
       <span id="contact-subtitle" class="centered">contact me at</span>
