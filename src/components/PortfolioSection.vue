@@ -12,9 +12,11 @@
         class="project-box"
         target="_blanck"
       >
-        <img class="responsive-img" 
-        alt="repo programming challenges"
-        src="../assets/pwsc.png" />
+        <img
+          class="responsive-img"
+          alt="repo programming challenges"
+          src="../assets/pwsc.png"
+        />
         <div class="project-footer">
           <span class="project-box-label">&lt; This Page Code /></span>
         </div>
@@ -25,9 +27,11 @@
         class="project-box"
         target="_blanck"
       >
-        <img class="responsive-img" 
-         alt="repo programming challenges"
-        src="../assets/progammingChallenges.png" />
+        <img
+          class="responsive-img"
+          alt="repo programming challenges"
+          src="../assets/progammingChallenges.png"
+        />
         <div class="project-footer">
           <span class="project-box-label">&lt; Progamming Problems /></span>
         </div>
@@ -101,5 +105,17 @@ export default {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
       0 12px 40px 0 rgba(0, 0, 0, 0.19);
   }
+}
+@media (max-width: 500px) {
+  #container-portfolio-display {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .project-box {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+}
 }
 </style>

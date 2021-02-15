@@ -55,7 +55,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   min-height: 500px;
   align-items: center;
 
@@ -64,7 +64,6 @@ section {
   section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
 }
 
