@@ -1,4 +1,4 @@
-# josealvis-website
+# Jose Alvis website
 
 ## Project setup
 ```
