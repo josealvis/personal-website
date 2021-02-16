@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  
+  <section
+    data-test="intro"
+    id="intro"
+  >
+    <div
+      class="center-box-container"
+    >
+      <h1
+        id="title"
+      >
+        Jose Alvis Pena
+      </h1>
+      <span
+        id="subtitle"
+      >
+        Fullstack web developer
+      </span>
+      <label
+        class="hidden-accesibility"
+        for="input-name"
+      >
+        Type your name and press "ENTER"
+      </label>
+      <form
+        name="form-vister-name"
+      >
+        <input
+          autofocus=""
+          id="input-name"
+          name="name"
+          placeholder="Type your name and press \\"ENTER\\"."
+          type="text"
+        />
+      </form>
+    </div>
+  </section>
+  <section
+    id="about-me"
+  >
+    <div
+      class="center-box-container"
+    >
+      <h1>
+        Who I am?
+      </h1>
+      <p
+        data-test="about-text"
+      >
+         It is nice to meet you. let me introduce myself, my name is Jose Alvis I am a fullstack web developer. I have flew years working in this carrer, more than five if I have to tell. Since that I have been developing web applications for diferent companies, working with Git flow, DevOps in SCRUM and AGILE methodologies. My main skill set are 
+        <span
+          class="hightlight"
+        >
+          Javascript
+        </span>
+        , 
+        <span
+          class="hightlight"
+        >
+          ReactJs
+        </span>
+        , 
+        <span
+          class="hightlight"
+        >
+          C# MVC .net core
+        </span>
+         and 
+        <span
+          class="hightlight"
+        >
+          SQL server
+        </span>
+        , but I also work with other languages and frameworks like 
+        <span
+          class="hightlight"
+        >
+          Vuejs
+        </span>
+        , 
+        <span
+          class="hightlight"
+        >
+          NodeJs
+        </span>
+        , 
+        <span
+          class="hightlight"
+        >
+          Python
+        </span>
+        . Also I have to mantion “I relly love to learn new skills”. 
+      </p>
+      <a
+        class="yellow-link"
+        href="http://www.linkedin.com/in/jose-alvis-peña-bonnet-b0194820"
+        id="about-link"
+        target="_blank"
+      >
+         If you want to know more about my career please visit my 
+        <font-awesome-icon
+          icon="fab,linkedin"
+        />
+        . 
+      </a>
+    </div>
+  </section>
+  <section
+    id="portfolio"
+  >
+    <h1
+      class="centered"
+      data-test="test-title"
+    >
+      Here are some project and programming problem I have done 
+    </h1>
+    <span
+      id="portfolio-subtitle"
+    >
+      Just to take an idea of how I code.
+    </span>
+    <div
+      id="container-portfolio-display"
+    >
+      <a
+        alt="repo of this website"
+        class="project-box"
+        href="https://github.com/josealvis/personal-website"
+        target="_blanck"
+      >
+        <img
+          alt="repo programming challenges"
+          class="responsive-img"
+          src="[object Object]"
+        />
+        <div
+          class="project-footer"
+        >
+          <span
+            class="project-box-label"
+          >
+            &lt; This Page Code /&gt;
+          </span>
+        </div>
+      </a>
+      <a
+        alt="repo programming challenges"
+        class="project-box"
+        href="https://github.com/josealvis/MayleetCodeChallenge"
+        target="_blanck"
+      >
+        <img
+          alt="repo programming challenges"
+          class="responsive-img"
+          src="[object Object]"
+        />
+        <div
+          class="project-footer"
+        >
+          <span
+            class="project-box-label"
+          >
+            &lt; Progamming Problems /&gt;
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section
+    id="readings"
+  >
+    <div
+      class="center-box-container"
+    >
+      <h1
+        class="centered"
+      >
+        What I am reading now
+      </h1>
+      <div
+        id="container-books-display"
+      >
+        <div
+          class="imag-box"
+        >
+          <a
+            alt="EloquentJs webpage"
+            href="https://eloquentjavascript.net/"
+            target="_black"
+          >
+            <img
+              alt="art book of EloquentJs"
+              class="responsive-img"
+              src="https://eloquentjavascript.net/img/cover.jpg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="contact"
+  >
+    <div
+      class="center-box-container"
+    >
+      <h1
+        class="centered"
+        data-test="contact-title"
+      >
+        Let’s work together... 
+      </h1>
+      <span
+        class="centered"
+        id="contact-subtitle"
+      >
+        contact me at
+      </span>
+      <div
+        id="social-media-bar"
+      >
+        <a
+          href="https://www.linkedin.com/in/jose-alvis-peña-bonnet-b0194820"
+          target="_blanck"
+          title="linkedIn profile"
+        >
+          <font-awesome-icon
+            icon="fab,linkedin"
+          />
+        </a>
+        <a
+          href="https://github.com/josealvis"
+          target="_blanck"
+          title="github profile"
+        >
+          <font-awesome-icon
+            icon="fab,github"
+          />
+        </a>
+        <a
+          href="mailto: jalvis9114@gmail.com"
+          title="Send me a email"
+        >
+          <font-awesome-icon
+            icon="fas,envelope"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>
+      © 2021 Jose Alvis Pena. Made with 
+      <a
+        class="footer-link"
+        href="https://vuejs.org/"
+      >
+        Vue.js
+      </a>
+       + CSS
+    </p>
+  </footer>
+</main>
+`;
