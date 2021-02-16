@@ -1,4 +1,4 @@
-name: Run Unit Test 
+name: Deploying to github-pages
 
 on:
   push:
