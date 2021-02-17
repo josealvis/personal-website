@@ -1,8 +1,8 @@
 <template>
-  <section id="readings">
+  <section id="readings" class="section readings-section">
     <div class="center-box-container">
-      <h1 class="centered">What I am reading now</h1>
-      <div id="container-books-display">
+      <h1 class="--centered">What I am reading now</h1>
+      <div class="container-books-display">
         <div class="imag-box">
           <a
             href="https://eloquentjavascript.net/"
@@ -27,11 +27,12 @@ export default {
 };
 </script>
 
-<style>
-#readings{
-  background-color: #f0e5c2;
+<style lang="scss">
+@import '../const/colors';
+.readings-section{
+  background-color: $secondaryLight;
 }
-#container-books-display {
+.container-books-display {
   display: flex;
   justify-content: center;
 }
@@ -39,9 +40,7 @@ export default {
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.centered {
-  align-self: center;
-}
+
 .imag-box:hover {
   animation: rise-animation;
   animation-duration: 500ms;

@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     keyCode(event) {
-      console.log(event.key)
       let vm = this;
       if (event.keyCode == 38 && this.secretCode == "") {
         this.secretCode += event.keyCode;
