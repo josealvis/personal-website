@@ -1,9 +1,8 @@
 <template>
-  <div id="mobile-toggle">
+  <div class="mobile-toggle">
     <button
-      id="toggle-btn"
-      aria-label="oggle Button for main menu"
-      class="toggle-btn"
+      aria-label="Toggle Button for main menu"
+      class="mobile-toggle__btn"
       v-on:click="toggleHandler"
     >
       <font-awesome-icon :icon="['fas', 'bars']" />
@@ -11,13 +10,24 @@
   </div>
   <nav
     class="top-nav-bar"
-    v-bind:class="{ 'toggled-in': toggle, 'toggled-out': !toggle }"
+    v-bind:class="{
+      'top-nav-bar--toggled-in': toggle,
+      'top-nav-bar--toggled-out': !toggle,
+    }"
     v-on:click="closeMenu()"
   >
-    <a href="#intro" v-on:click="closeMenu()">Intro</a>
-    <a href="#about-me" v-on:click="closeMenu()">About me</a>
-    <a href="#portfolio" v-on:click="closeMenu()">How I code</a>
-    <a href="#contact" v-on:click="closeMenu()">Contact</a>
+    <a href="#intro" class="top-nav-bar__link" v-on:click="closeMenu()"
+      >Intro</a
+    >
+    <a href="#about-me" class="top-nav-bar__link" v-on:click="closeMenu()"
+      >About me</a
+    >
+    <a href="#portfolio" class="top-nav-bar__link" v-on:click="closeMenu()"
+      >How I code</a
+    >
+    <a href="#contact" class="top-nav-bar__link" v-on:click="closeMenu()"
+      >Contact</a
+    >
   </nav>
 </template>
 
@@ -41,45 +51,63 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-#mobile-toggle {
+
+<style lang="scss" scoped>
+@import "../const/colors.scss";
+
+.mobile-toggle {
   display: none;
 }
+
 .top-nav-bar {
   z-index: 9000;
-  color: #ebf5f0;
+  color: $secondary;
   display: flex;
-  background-color: #ce2751;
+  background-color: $primary;
   height: 45px;
   justify-content: flex-end;
   padding-top: 20px;
   position: fixed;
   min-width: 100%;
 }
-.top-nav-bar a {
-  color: #ebf5f0;
+
+.top-nav-bar__link {
+  color: $secondary;
   text-decoration: none;
   margin-right: 50px;
 }
-.top-nav-bar a:hover {
-  color: #fff;
+
+.top-nav-bar__link:hover {
+  opacity: 0.8;
 }
+
 /*for mobile dispositives */
 @media (max-width: 500px) {
-  .toggle-btn {
+  .mobile-toggle {
+    display: flex;
+    background-color: $primary;
+    color: $secondary;
+    height: 45px;
+    position: fixed;
+    z-index: 9001;
+    min-width: 100%;
+    padding-left: 10px;
+  }
+
+  .mobile-toggle__btn {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #ebf5f0;
+    color: $secondary;
     font-size: 1.3em;
   }
 
   .top-nav-bar {
     z-index: 9000;
-    color: #ebf5f0;
+    color: $secondary;
     flex-direction: column;
     display: flex;
-    background-color: #0a1128;
+    background-color: $secondaryDark;
     height: 100vh;
     justify-content: flex-start;
     align-items: center;
@@ -90,45 +118,33 @@ export default {
     left: -45%;
   }
 
-  .top-nav-bar a {
-    color: #ebf5f0;
+  .top-nav-bar__link {
+    color: $secondary;
     text-decoration: none;
     margin: 0px;
     margin-bottom: 15px;
   }
-  .top-nav-bar a:hover {
-    color: #fff;
+  .top-nav-bar__link:hover {
+    color: $secondary;
   }
 
-  #mobile-toggle {
-    display: flex;
-    background-color: #ce2751;
-    color: #ebf5f0;
-    height: 45px;
-    position: fixed;
-    z-index: 9001;
-    min-width: 100%;
-    padding-left: 10px;
-  }
-
-  .toggled-in {
+  .top-nav-bar--toggled-in {
     display: flex;
     animation: toggle-in-animation;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
   }
-
-.toggled-in::before{
+  .top-nav-bar--toggled-in::before {
     height: 100%;
     content: "";
     position: absolute;
     width: 100vw;
-    top:0;
+    top: 0;
     left: 0;
     z-index: -1 !important;
   }
-  
-  .toggled-out {
+
+  .top-nav-bar--toggled-out {
     animation: toggle-out-animation;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -145,7 +161,7 @@ export default {
     }
     100% {
       left: -45%;
-      display:none;
+      display: none;
     }
   }
 }

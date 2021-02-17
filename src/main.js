@@ -6,8 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faFontAwesome, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope, faBars} from '@fortawesome/free-solid-svg-icons'
 
-//styles
-import "./main.css"
+
 
 library.add(faLinkedin, faFontAwesome, faGithub, faEnvelope, faBars)
 

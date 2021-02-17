@@ -1,3 +1,5 @@
+@import './const/colors.scss';
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,11 +21,11 @@ h1 {
   font-family: Consolas, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: #FEFCFB;
+  color: $neutrayDark;
+  background-color: $secondary;
 }
 
-.hidden-accesibility {
+.--hidden-accesibility {
   position: absolute;
   left: -10000px;
   width: 1px;
@@ -32,7 +34,7 @@ h1 {
   overflow: hidden;
 }
 
-.responsive-img{
+.--responsive-img{
   max-width: 100%;
   height: auto;
 }
