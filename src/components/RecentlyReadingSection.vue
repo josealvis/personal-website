@@ -10,7 +10,7 @@
             target="_black"
           >
             <img
-              class="responsive-img"
+              class="--responsive-img"
               src="https://eloquentjavascript.net/img/cover.jpg"
               alt="art book of EloquentJs"
             />

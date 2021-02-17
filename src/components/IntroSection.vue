@@ -3,7 +3,7 @@
     <div class="center-box-container">
       <h1 id="title" >Jose Alvis Pena</h1>
       <span id="subtitle">Fullstack web developer</span>
-      <label class="hidden-accesibility" for="input-name"
+      <label class="--hidden-accesibility" for="input-name"
         >Type your name and press "ENTER"</label
       >
       <form name="form-vister-name" v-on:submit.prevent >

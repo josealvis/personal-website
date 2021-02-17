@@ -3,16 +3,10 @@
     <div class="center-box-container">
       <h1>Who I am?</h1>
       <p data-test="about-text">
-        {{ visiterName ? `Hi ${visiterName}.` : null }} It is nice to meet you.
-        let me introduce myself, my name is Jose Alvis I am a fullstack web
-        developer. I have flew years working in this carrer, more than five if I
-        have to tell. Since that I have been developing web applications for
-        diferent companies, working with Git flow, DevOps in SCRUM and AGILE
-        methodologies. My main skill set are
+        {{ visiterName ? `Hi ${visiterName}.` : null }} let me introduce myself, my name is Jose Alvis I am a fullstack web developer. I have a lot of years working in this career, more than five if I have to tell. Since that I have been developing web applications for different companies, working with Git flow, DevOps in SCRUM, and AGILE methodologies. My main skill set are
         <span class="hightlight">Javascript</span>, <span class="hightlight">ReactJs</span>, <span class="hightlight">C# MVC .net core</span> and
         <span class="hightlight">SQL server</span>, but I also work with other languages and frameworks like
-        <span class="hightlight">Vuejs</span>, <span class="hightlight">NodeJs</span>, <span class="hightlight">Python</span>. Also I have to mantion “I relly love to learn new
-        skills”.
+        <span class="hightlight">Vuejs</span>, <span class="hightlight">NodeJs</span>, <span class="hightlight">Python</span>.  Also, I have to mention “I really love to learn new skills”.
       </p>
       <a
         id="about-link"

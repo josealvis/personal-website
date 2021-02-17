@@ -13,7 +13,7 @@
         target="_blanck"
       >
         <img
-          class="responsive-img"
+          class="--responsive-img"
           alt="repo programming challenges"
           src="../assets/pwsc.png"
         />
@@ -28,7 +28,7 @@
         target="_blanck"
       >
         <img
-          class="responsive-img"
+          class="--responsive-img"
           alt="repo programming challenges"
           src="../assets/progammingChallenges.png"
         />
