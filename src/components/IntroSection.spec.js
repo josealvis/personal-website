@@ -9,7 +9,7 @@ it('renders correctly', () => {
 test('renders  IntroSection', () => {
   const wrapper = mount(IntroSection)
 
-  const title = wrapper.get('[id="title"]')
+  const title = wrapper.get('[data-test="title"]')
 
   expect(title.text()).toBe('Jose Alvis Pena')
 })

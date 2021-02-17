@@ -1,16 +1,17 @@
 <template>
   <section id="contact" class="section contact-section">
     <div class="center-box-container">
-      <h1 class="--centered" data-test="title">
+      <h1 class="--centered" data-test="contact-title">
         {{ visiterName ? `${visiterName}, ` : null }}Let’s work together...
       </h1>
       <span class="contact-section__subtitle --centered">contact me at</span>
       <div class="social-media-bar">
-        <a
+        <a 
           v-bind:href="inAccount"
           class="social-media-bar__link"
           title="linkedIn profile"
           target="_blanck"
+          data-test="in-icon"
           ><font-awesome-icon :icon="['fab', 'linkedin']"
         /></a>
         <a
@@ -18,12 +19,14 @@
           class="social-media-bar__link"
           title="github profile"
           target="_blanck"
+          data-test="github-icon"
           ><font-awesome-icon :icon="['fab', 'github']"
         /></a>
         <a
           v-bind:href="`mailto: ${email}`"
           class="social-media-bar__link"
           title="Send me a email"
+          data-test="email-icon"
           ><font-awesome-icon :icon="['fas', 'envelope']"
         /></a>
       </div>

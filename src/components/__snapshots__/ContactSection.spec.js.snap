@@ -2,27 +2,29 @@
 
 exports[`renders correctly 1`] = `
 <section
+  class="section contact-section"
   id="contact"
 >
   <div
     class="center-box-container"
   >
     <h1
-      class="centered"
+      class="--centered"
       data-test="contact-title"
     >
       Let’s work together... 
     </h1>
     <span
-      class="centered"
-      id="contact-subtitle"
+      class="contact-section__subtitle --centered"
     >
       contact me at
     </span>
     <div
-      id="social-media-bar"
+      class="social-media-bar"
     >
       <a
+        class="social-media-bar__link"
+        data-test="in-icon"
         href="https://www.linkedin.com/in/jose-alvis-peña-bonnet-b0194820"
         target="_blanck"
         title="linkedIn profile"
@@ -32,6 +34,8 @@ exports[`renders correctly 1`] = `
         />
       </a>
       <a
+        class="social-media-bar__link"
+        data-test="github-icon"
         href="https://github.com/josealvis"
         target="_blanck"
         title="github profile"
@@ -41,6 +45,8 @@ exports[`renders correctly 1`] = `
         />
       </a>
       <a
+        class="social-media-bar__link"
+        data-test="email-icon"
         href="mailto: jalvis9114@gmail.com"
         title="Send me a email"
       >
