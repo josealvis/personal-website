@@ -1,8 +1,8 @@
 <template>
   <section id="portfolio" class="section portfolio-section">
     <h1 class="--centered" data-test="test-title">
-      {{ visiterName ? `${visiterName}, ` : null }}Here are some project and
-      programming problem I have done
+      {{ visiterName ? `${visiterName}, ` : null }}Here are some projects and
+      programming problems I have done
     </h1>
     <span id="portfolio-section__subtitle"
       >Just to take an idea of how I code.</span
