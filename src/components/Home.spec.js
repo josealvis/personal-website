@@ -6,3 +6,4 @@ it('renders correctly', () => {
     //const wrapper = mount(Home)
     // expect(wrapper.element).toMatchSnapshot();
     expect(true).toBeTruthy();
+}
