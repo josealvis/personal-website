@@ -1,11 +1,13 @@
 <template>
-  <section id="portfolio">
-    <h1 class="centered" data-test="test-title">
-      {{ visiterName ? `${visiterName}, ` : null }}Here are some project and
-      programming problem I have done
+  <section id="portfolio" class="section portfolio-section">
+    <h1 class="--centered" data-test="test-title">
+      {{ visiterName ? `${visiterName}, ` : null }}Here are some projects and
+      programming problems I have done
     </h1>
-    <span id="portfolio-subtitle">Just to take an idea of how I code.</span>
-    <div id="container-portfolio-display">
+    <span id="portfolio-section__subtitle"
+      >Just to take an idea of how I code.</span
+    >
+    <div class="container-portfolio-display">
       <a
         href="https://github.com/josealvis/personal-website"
         alt="repo of this website"
@@ -13,12 +15,14 @@
         target="_blanck"
       >
         <img
-          class="responsive-img"
+          class="--responsive-img"
           alt="repo programming challenges"
           src="../assets/pwsc.png"
         />
-        <div class="project-footer">
-          <span class="project-box-label">&lt; This Page Code /></span>
+        <div >
+          <span class="project-box__label"
+            >&lt; This Page Code /></span
+          >
         </div>
       </a>
       <a
@@ -28,12 +32,14 @@
         target="_blanck"
       >
         <img
-          class="responsive-img"
+          class="--responsive-img"
           alt="repo programming challenges"
           src="../assets/progammingChallenges.png"
         />
-        <div class="project-footer">
-          <span class="project-box-label">&lt; Progamming Problems /></span>
+        <div>
+          <span class="project-box__label"
+            >&lt; Progamming Problems /></span
+          >
         </div>
       </a>
     </div>
@@ -49,18 +55,20 @@ export default {
 };
 </script>
 
-<style scoped>
-#portfolio {
+<style lang="scss" scoped>
+@import '../const/colors';
+.portfolio-section {
   padding-top: 90px;
   padding-left: 20px;
   padding-right: 20px;
+
+  &__subtitle {
+    opacity: 0.8;
+    position: relative;
+    top: -20px;
+  }
 }
-#portfolio-subtitle {
-  opacity: 0.8;
-  position: relative;
-  top: -20px;
-}
-#container-portfolio-display {
+.container-portfolio-display {
   display: flex;
   justify-content: space-around;
   padding-top: 70px;
@@ -69,29 +77,20 @@ export default {
 .project-box {
   width: 300px;
   height: 200px;
-  background-color: #0a1128;
+  background-color: $primaryDark;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-}
-.project-box:hover {
-  animation: rise-animation;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
-
-.project-box-label {
+  
+  &__label {
   display: block;
-  color: #fefcfb;
+  color: $secondary;
   padding-top: 20px;
 }
-
-.centered {
-  align-self: center;
 }
-.imag-box:hover {
+.project-box:hover {
   animation: rise-animation;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -106,16 +105,17 @@ export default {
       0 12px 40px 0 rgba(0, 0, 0, 0.19);
   }
 }
+
 @media (max-width: 500px) {
-  #container-portfolio-display {
+  .container-portfolio-display {
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
   }
   .project-box {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 20px;
-}
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
 }
 </style>
