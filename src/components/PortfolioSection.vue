@@ -5,7 +5,7 @@
       programming problems I have done
     </h1>
     <span id="portfolio-section__subtitle"
-      >Just to take an idea of how I code.</span
+      >Just to have an idea of how I code.</span
     >
     <div class="container-portfolio-display">
       <a
