@@ -5,7 +5,7 @@ it('renders correctly', () => {
   const wrapper = mount(ContactSection)
   expect(wrapper.element).toMatchSnapshot();
 });
-
+//TODO: rename visiter var to visitor
 it('renders a visiter name in title', async () => {
   const wrapper = mount(ContactSection)
   const visiterName = "Robot Test"
