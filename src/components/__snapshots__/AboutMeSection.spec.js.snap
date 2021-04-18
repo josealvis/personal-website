@@ -9,7 +9,7 @@ exports[`renders correctly 1`] = `
     class="center-box-container"
   >
     <h1>
-      Who I am?
+      Who am I?
     </h1>
     <p
       data-test="about-text"
