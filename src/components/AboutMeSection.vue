@@ -1,7 +1,7 @@
 <template>
   <section id="about-me" class="section about-me-section">
     <div class="center-box-container">
-      <h1>Who I am?</h1>
+      <h1>Who am I?</h1>
       <p data-test="about-text">
         {{ visiterName ? `Hi ${visiterName}.` : null }} let me introduce myself,
         my name is Jose Alvis I am a fullstack web developer. I have a lot of
