@@ -1,6 +1,9 @@
 <template>
   <section id="contact" class="section contact-section">
     <div class="center-box-container">
+    <h1 class="--centered" data-test="contact-title">
+        {{ visiterName ? `${visiterName}, ` : null }}Do you best today, even though yesterday you didn't.
+      </h1>
       <h1 class="--centered" data-test="contact-title">
         {{ visiterName ? `${visiterName}, ` : null }}Let’s work together...
       </h1>
